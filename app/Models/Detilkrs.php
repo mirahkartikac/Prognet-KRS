@@ -11,7 +11,7 @@ class Detilkrs extends Model
 
     protected $table = 'detilkrs';
     //untuk mengabaikan convention yang ada dari laravel
-
+    // pembutan tabel
     protected $fillable = [
         'krs_id',
         'mahasiswa_id',
