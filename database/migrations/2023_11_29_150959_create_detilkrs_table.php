@@ -18,6 +18,8 @@ return new class extends Migration
             $table->unsignedBigInteger('matakuliah_id');
             $table->string('nilai');
             $table->timestamps();
+
+            
         });
     }
 
