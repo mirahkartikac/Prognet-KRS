@@ -18,6 +18,11 @@ return new class extends Migration
             $table->unsignedBigInteger('matakuliah_id');
             $table->string('nilai');
             $table->timestamps();
+
+            // Foreign keys
+            $table->foreign('krs_id')->references('id')->on('krs')->onDelete('cascade');
+            $table->foreign('mahasiswa_id')->references('id')->on('mahasiswas')->onDelete('cascade');
+            $table->foreign('matakuliah_id')->references('id')->on('matakuliahs')->onDelete('cascade');
         });
     }
 

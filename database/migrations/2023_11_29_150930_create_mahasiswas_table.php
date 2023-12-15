@@ -19,6 +19,8 @@ return new class extends Migration
             $table->date('lahir');
             $table->unsignedBigInteger('agama_id');
             $table->timestamps();
+
+            $table->foreign('agama_id')->references('id')->on('agamas')->onDelete('cascade');
         });
     }
 
