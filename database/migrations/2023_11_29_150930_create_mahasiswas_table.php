@@ -19,8 +19,6 @@ return new class extends Migration
             $table->date('lahir');
             $table->unsignedBigInteger('agama_id');
             $table->timestamps();
-
-
         });
     }
 
