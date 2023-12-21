@@ -9,7 +9,7 @@ class Krs extends Model
 {
     use HasFactory;
 
-    protected $table = 'krs';
+
     protected $fillable = [
         'tahun',
         'semester'
