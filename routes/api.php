@@ -27,3 +27,8 @@ Route::apiResource('/matakuliah',ApiMatakuliahController::class);
 Route::apiResource('/krs',ApiKrsController::class);
 
 Route::apiResource('/detilkrs',ApiDetilkrsController::class);
+
+Route::post('/login', [AuthController::class, 'login']);
+
+Route::post('/logout', [AuthController::class, 'logout'])
+    ->middleware('auth:sanctum');
